@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>HTML - Formulário Fale Conosco</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style-form.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./images/baixados.png">
+
+</head>
+
+<body>
+
+	<header>
+		<h2>Curso Front-end - HTML + CSS</h2>
+		<h3>Formularios</h3>
+	</header>
+
+	<section>
+
+		<nav>
+			<h3>Navegação</h3>
+			<ul class="navegacao">
+				<li id="primeiro-link"><a href="homepage.html"> <i class="fas fa-hand-spock"></i>
+						Introdução</a></li>
+				<li><a href="03-formatacao-de-texto.html"><i class="fas fa-file-alt"></i> Formatação</a></li>
+				<li><a href="tabelas.html"><i class="fas fa-table"></i> Tabelas</a></li>
+				<li><a href="06-formularios.html"><i class="fas fa-newspaper"></i> Formulários</a></li>
+			</ul>
+
+			<h3>Redes Sociais</h3>
+			<ul class="navegacao">
+				<li class="navegacao"><a href="https://www.linkedin.com/in/pablo-cardias-flores-a2a77a161/"
+						target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+				<li class="navegacao"><a href="https://www.instagram.com/sixpablo/" target="_blank"><i
+							class="fab fa-instagram-square"></i> @sixpablo</a></li>
+			</ul>
+		</nav>
+
+		<article>
+
+			<h1 class="h1-article">Contato</h1>
+			<p class="paragrafo-article">Preencha os campos abaixo</p>
+
+			<form method="post">
+
+				<div class="formulario">
+					<label for="nome">Nome</label><br>
+					<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+				</div>
+
+				<div class="formulario">
+					<label for="email">E-mail</label><br>
+					<input type="email" name="email" id="email" placeholder="Digite seu email">
+				</div>
+
+				<div class="formulario">
+					<label for="mensagem">Mensagem</label><br>
+					<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+				</div>
+
+				<div class="formulario">
+					<p>
+						<label>Qual linguagem você prefere?</label>
+						<input type="radio" name="linguagens" value="html"> HTML
+						<input type="radio" name="linguagens" value="css"> CSS
+						<input type="radio" name="linguagens" value="javascript"> JavaScript
+					</p>
+				</div>
+
+				<div class="formulario">
+					<p>
+						<label>Quais linguagens você sabe?</label>
+						<input type="checkbox" name="linguagens" value="html"> HTML
+						<input type="checkbox" name="linguagens" value="css"> CSS
+						<input type="checkbox" name="linguagens" value="javascript"> JavaScript
+					</p>
+				</div>
+
+				<div class="formulario">
+					<label>Qual a sua cor favorita?</label>
+					<select>
+						<option value="Azul">Azul</option>
+						<option value="Verde">Verde</option>
+						<option value="Vermelho" selected>Vermelho</option>
+					</select>
+				</div>
+
+				<div class="formulario">
+					<input type="submit">
+				</div>
+
+
+			</form>
+
+
+
+		</article>
+
+
+	</section>
+
+	<footer>
+		<p>Desenvolvido por Pablo Cardias &#169</p>
+		<p class="assinatura">Pablo Cardias</p>
+	</footer>
+
+</body>
+
+</html>

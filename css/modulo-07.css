@@ -1,0 +1,76 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+header h2 {
+	font-weight: 100;
+}
+
+
+header > h2 {
+	font-weight: 600;
+}
+
+
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+
+
+
+
+a {
+	color: #555555;
+	text-decoration: none;
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {
+	color: #1b263b;
+}
+
+
+html {
+	font-family: sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+	font-family: 'Limelight', cursive;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+body {
+	background: #0d1b2a
+}
+
+section {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+

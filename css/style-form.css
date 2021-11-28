@@ -1,0 +1,243 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-family: serif;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+body {
+	background-color: white;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h1,
+h2,
+p,
+li {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #222222;
+}
+
+h3 {
+	color: #66f;
+}
+
+.paragrafo-article {
+    color: #222;
+}
+
+
+ul {
+	font-size: 20px;
+}
+
+ul li {
+	font-size: 0.8em; /* equivalente a 16px */
+	font-size: 1.6rem; /* equivalente a 16px */
+	width: 80%;
+	height: 3rem; /* equivalente a 30px */
+}
+
+p {
+	font-size: 1.6rem;
+    color: #e0e1dd; /* equivalente a 16px */
+}
+
+.cab-pe {
+	color: #e0e1dd;
+}
+
+h2 {
+	font-size: 2rem; /* equivalente a 20px */
+	height: 3rem;
+	color: #e0e1dd;
+}
+
+
+
+.navegacao li {
+	display: block;
+	padding: 2rem 2rem 2rem 2rem;
+	line-height: 1.2rem;
+}
+
+.navegacao a {
+	color: #66f;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 0.5rem;
+	width: 100%;
+}
+
+.navegacao a:hover {
+	background-color: #5bc0be;
+	color:  #e0e1dd;
+	border-radius: 5px;
+	padding: 4px 4px;
+}
+
+/* .navegacao a:visited {
+	color: #1a0722;
+} */
+
+form {
+	background: #eee;
+	padding: 10px;
+}
+
+form div {
+	background: #fff;
+	border-bottom: 1px solid #33f;
+	margin: 1rem;
+	padding: 2rem;
+}
+
+label {
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #66f;
+}
+
+input {
+	padding: 1rem;
+}
+
+[type="text"],
+[type="email"],
+textarea,
+label {
+	display: block;
+	width: 100%;
+}
+
+header {
+	background-color: #0d1b2a;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+}
+
+nav {
+	float: left;
+	background: #1c2541;
+	width: 20%;
+	padding: 20px;
+    height: 165vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+article {
+	float: left;
+	padding: 20px;
+	width: 75%;
+}
+
+section::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.fa-github {
+	font-size: 50px;
+	background-attachment: scroll;
+	position: fixed;
+	display: block;
+	right: 0;
+	color: #0d1b2a;
+	
+}
+
+footer {
+	background-color: #0d1b2a;
+	padding: 10px;
+	text-align: center;
+	color: #e0e1dd;
+}
+
+.assinatura {
+	font-family: "Comforter Brush", cursive;
+	color: #e0e1dd;
+}
+
+
+
+/* Limpa flutuadores apos as colunas */
+
+
+label {
+    color: #E0E1DD;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+input {
+    padding: 1rem;
+    border-radius: 10px;
+    border-style: none;
+    color: #1B263B;
+}
+
+/* Estilo do rodapé */
+footer {
+    padding: 10px;
+    text-align: center;
+    color: #E0E1DD;
+}
+
+#mode {
+    font-family: sans-serif;
+    color:whitesmoke;
+}
+
+.formulario {
+    background: #415A77;
+    color: #E0E1DD;
+    border-radius: 10px;
+    margin: 1rem 2rem;
+    padding: 2rem;
+}
+
+[type="text"], [type="email"], textarea {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Layout responsivo - Faz as duas colunas/ caixas empilhadas umas sobre as outras em vez de uma ao lado da outra, em telas pequenas */
+@media (max-width: 600px) {
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
