@@ -137,15 +137,22 @@ header {
 	color: white;
 }
 
+
+section {
+	display: flex;
+}
+
 nav {
 	float: left;
 	background: #1c2541;
 	width: 20%;
 	padding: 20px;
-    height: 165vh;
-    display: flex;
+    /* height: 165vh; */
+    /* display: flex; */
     flex-direction: column;
     flex-wrap: wrap;
+	flex-grow: -1;
+
 }
 
 nav ul {
@@ -156,12 +163,14 @@ nav ul {
 article {
 	float: left;
 	padding: 20px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex-grow: 1;
 	width: 75%;
 }
 
 section::after {
 	content: "";
-	display: table;
 	clear: both;
 }
 
@@ -240,4 +249,9 @@ footer {
         width: 100%;
         height: auto;
     }
+
+	section {
+		display: flex;
+		flex-direction: column;
+	}
 }
